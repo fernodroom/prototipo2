@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sobre Mí</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  
+  </head>
+  <body class="body">
+    <div class="container-fluid">
+        <!-- Barra de navegación para pantallas grandes -->
+        <nav class="row fixed-top d-none d-lg-flex">
+            <div class="col-1"></div>
+            <a class="btn btn-primary col-1" href="index.html" role="button"><img src="images/Recurso 9.png" height="100%" alt=""></a>
+            <a class="btn btn-primary col-2" href="index.html" role="button">Juan Jacobo Bernal Productor Multimedia</a>
+            <div class="col-2"></div>
+            <a class="btn btn-primary col-1" href="index.html" role="button">Inicio</a>
+            <a class="btn btn-primary col-1" href="sobreMi.html" role="button">Sobre Mí</a>
+            <a class="btn btn-primary col-1" href="servicios.html" role="button">Servicios</a>
+            <a class="btn btn-primary col-1" href="galeria.html" role="button">Galería</a>
+            <a class="btn btn-primary col-1" href="blog.html" role="button">Blog</a>
+            <div class="col-2"></div>
+        </nav>
+
+        <!-- Barra de navegación hamburguesa para tablets y móviles -->
+        <nav class="navbar navbar-expand-lg fixed-top d-lg-none">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Recurso 9.png" height="100%" alt="">
+            </a>
+            <a class="navbar-brand" href="index.html">Juan Jacobo Bernal Productor Multimedia</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobreMi.html">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Fondo semitransparente para el menú hamburguesa -->
+        <div id="menu-overlay" class="menu-overlay d-lg-none"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Mostrar/ocultar el overlay cuando se abre/cierra el menú hamburguesa
+        document.querySelector('.navbar-toggler').addEventListener('click', function () {
+            var overlay = document.getElementById('menu-overlay');
+            overlay.classList.toggle('active');
+        });
+
+        // Cerrar el overlay cuando se hace clic en un enlace del menú
+        document.querySelectorAll('.nav-link').forEach(function(link) {
+            link.addEventListener('click', function () {
+                var overlay = document.getElementById('menu-overlay');
+                overlay.classList.remove('active');
+            });
+        });
+    </script>
+
+    /* imagen del niño con mi informacion */
+
+    <main class="row" >
+        <div class="col-1 espacio7"></div>
+        <div class="col-10 espacio8"> <img src="images/sobreMi.png" class="dibujoSobreMi" alt=""></div>
+        <div class="col-1 espacio7 "></div>
+        <div class="col-12 espacio9" ></div>
+
+
+    </main>
+    <section class="container-fluid col-12 espacio10">
+        <div class="row ">
+            <div class="col-1"></div>
+            <div class="col-5 textoHabilidades">
+                <h2>ESTE SOY YO Y MIS HABILIDADES</h2>
+
+            </div>
+            <div class="col-6"></div>
+            <div class="col-1"></div>
+            <div class="col-2 espacio11"> <img src="images/logoPhoto.png" class="logoPhoto"></div>
+            <div class="col-8 fotoYo"> <img src="images/yo.png" alt=""></div>
+            <div class="col-1"></div>
+
+            <div class="col-1"></div>
+            <div class="col-2 espacio11"> <img src="images/logoIlus.png" class="logoPhoto"></div>
+            <div class="col-9"></div>
+            <div class="col-1"></div>
+            <div class="col-2 espacio11"> <img src="images/logoInde.png" class="logoPhoto"></div>
+            <div class="col-9"></div>
+            <div class="col-1"></div>
+            <div class="col-2 espacio11"> <img src="images/logoKrita.png" class="logoPhoto"></div>
+            <div class="col-9"></div>
+            <div class="col-1"></div>
+            <div class="col-2 espacio11"> <img src="images/logoFigma.png" class="logoPhoto"></div>
+            <div class="col-9"></div>
+            <div class="col-1"></div>
+            <div class="col-2 espacio11"> <img src="images/logoVisual.png" class="logoPhoto"></div>
+            <div class="col-9"></div>
+            <div class="col-12 espacio12"></div>
+       
+            
+
+        </div>
+
+        
+        
+    </section>
+    <div class="col-12 espacio12"></div>
+    <footer class="row footer1">
+        <div class="col-1"></div>
+    
+        <div class="contactame col-3 col-xl-3 col-xxl-3 col-sm-3 col-md-3 col-lg-3">
+            <h2>CONTÁCTAME POR ACÁ</h2>
+            <a class="botonesContactos1" href="https://wa.me/573232511854"><img src="images/wattsap.png" alt=""> 323 2511854</a>
+            <a class="botonesContactos2" href="mailto:juanjacobobernalbernal@gmail.com"><img src="images/gmail.png" alt=""> juanjacobobernalbernal@gmail.com</a>
+        </div>
+    
+        <div class="col-4 skinhead"> 
+            <img src="images/skinhead.png" alt="">
+        </div>
+    
+        <div class="col-3 redesSociales" id="redes">
+            <h2 class="text-center">REDES SOCIALES</h2>
+            <div class="botonesR">
+                <a class="botonesRedes" href="https://www.instagram.com/ferno_droom?igsh=MTYzeXBkZXJrcjh4bA=="><img src="images/facebook.png" class="face" alt=""></a>
+                <a class="botonesRedes" href="https://www.instagram.com/ferno_droom?igsh=MTYzeXBkZXJrcjh4bA=="><img src="images/instagram.png" class="ig"></a>
+                <a class="botonesRedes" href="https://github.com/fernodroom"><img src="images/github.png" class="git" alt=""></a>
+            </div>
+        </div>
+    
+        <div class="col-1"></div>
+    </footer>
+    
+    <!-- Footer 2 (Aparece cuando la pantalla es menor de 900px) -->
+    <div class="row footer2">
+        <div class="col-1 col-sm-1 col-md-1 col-lg-1"></div>
+    
+        <div class="contactame2 col-10 col-sm-10 col-md-10 col-lg-10">
+            <h2>CONTACTOS Y REDES</h2>
+        </div>
+    
+        <div class="col-1 col-sm-1 col-md-1 col-lg-1"></div>
+    
+        <div class="row botonesApilados">
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1"></div>
+            <a class="col-2 col-sm-2 col-md-2 col-lg-2" href="https://wa.me/573232511854"><img src="images/wattsap.png" alt=""></a>
+            <a class="col-2 col-sm-2 col-md-2 col-lg-2" href="mailto:juanjacobobernalbernal@gmail.com"><img src="images/gmail.png" alt=""></a>
+            <a class="col-2 col-sm-2 col-md-2 col-lg-2" href="https://www.instagram.com/ferno_droom?igsh=MTYzeXBkZXJrcjh4bA=="><img src="images/facebook.png" class="face" alt=""></a>
+            <a class="col-2 col-sm-2 col-md-2 col-lg-2" href="https://www.instagram.com/ferno_droom?igsh=MTYzeXBkZXJrcjh4bA=="><img src="images/instagram.png" class="ig"></a>
+            <a class="col-2 col-sm-2 col-md-2 col-lg-2" href="https://github.com/fernodroom"><img src="images/github.png" class="git" alt=""></a>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1"></div>
+        </div>
+    
+        <div class="row ">
+            <div class=" lateral6 col-3 col-sm-3 col-md-3 col-lg-3"></div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 skinhead2"> 
+                <img src="images/skinhead.png"  alt="">
+            </div>
+            <div class=" lateral6 col-3 col-sm-3 col-md-3 col-lg-3"></div>
+        </div>
+    </div>
+    
+        
+            
+
+       
+
+        
+    
+    
+
+
+    </footer>
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
